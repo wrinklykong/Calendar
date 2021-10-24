@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CalendarViewController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <GridPane fx:id="calendarPane" gridLinesVisible="true" layoutX="32.0" layoutY="179.0" prefHeight="580.0" prefWidth="737.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="monTitle" alignment="CENTER" prefHeight="165.0" prefWidth="106.0" text="Monday" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tueTitle" alignment="CENTER" prefHeight="89.0" prefWidth="105.0" text="Tuesday" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="wedTitle" alignment="CENTER" prefHeight="83.0" prefWidth="143.0" text="Wednesday" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="thuTitle" alignment="CENTER" prefHeight="82.0" prefWidth="105.0" text="Thursday" GridPane.columnIndex="4">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="friTitle" alignment="CENTER" prefHeight="83.0" prefWidth="228.0" text="Friday" GridPane.columnIndex="5">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="satTitle" alignment="CENTER" prefHeight="83.0" prefWidth="122.0" text="Saturday" GridPane.columnIndex="6">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sunTitle" alignment="CENTER" prefHeight="131.0" prefWidth="106.0" text="Sunday" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Button fx:id="loadButton" layoutX="686.0" layoutY="99.0" mnemonicParsing="false" onAction="#loadNextMonth" text="Load" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
